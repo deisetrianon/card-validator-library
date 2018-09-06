@@ -1,7 +1,7 @@
-# Credit Card Library v.1.0.2
+# Credit Card Library v.1.0.3
 Credit Card Library is a JavaScript Library that can be used to validate a credit card number through the Luhn algorithm.
 
-### Version 1.0.2
+### Version 1.0.3
 Returns true for valid card numbers and false to invalid card numbers.
 
 ### Method

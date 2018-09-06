@@ -4,19 +4,19 @@ const expect = chai.expect;
 const cardValidator = require("../index");
 
 describe("cardValidator", () => {
-  context("For empty card numbers", () => {
+  describe("For empty parameters", () => {
     it ("should throw a New Error", () => {
-      expect(() => cardValidator('')).to.throw('The card number is empty.');
-      expect(() => cardValidator()).to.throw('The card number is empty.');
+      expect(() => cardValidator('')).to.throw('Empty parameter.');
+      expect(() => cardValidator()).to.throw('Empty parameter.');
     })
   })
 
-  describe("For non-empty card numbers", () => {
-    context("When the card number is not a number", () => {
+  describe("For non-empty parameters", () => {
+    context("When the parameter is not a number", () => {
       it ("should throw a New Error", () => {
-        expect(() => cardValidator('word')).to.throw('The card number is not a number.');
-        expect(() => cardValidator('36490102462661')).to.throw('The card number is not a number.');
-        expect(() => cardValidator('1')).to.throw('The card number is not a number.');
+        expect(() => cardValidator('word')).to.throw('The parameter is not a number.');
+        expect(() => cardValidator('36490102462661')).to.throw('The parameter is not a number.');
+        expect(() => cardValidator('1')).to.throw('The parameter is not a number.');
       })
     })
 

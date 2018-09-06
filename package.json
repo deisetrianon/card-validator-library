@@ -1,6 +1,6 @@
 {
   "name": "credit-card-library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Card Validator Library",
   "main": "index.js",
   "directories": {

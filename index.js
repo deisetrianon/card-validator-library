@@ -1,10 +1,10 @@
-function cardValidator(cardNumber) {
-  if (!cardNumber) throw new Error('The card number is empty.');
+function cardValidator(cardnumber) {
+  if (!cardnumber) throw new Error('Empty parameter.');
 
-  if (typeof cardNumber !== 'number') {
-    throw new Error('The card number is not a number.');
+  if (typeof cardnumber !== 'number') {
+    throw new Error('The parameter is not a number.');
   } else {
-    const array = cardNumber.toString().split('').map(cardNumber => parseInt(cardNumber)).reverse();
+    const array = cardnumber.toString().split('').map(cardnumber => parseInt(cardnumber)).reverse();
     if (array.length === 1) {
       throw new Error('The card number is a one-digit number.');
     } else {
