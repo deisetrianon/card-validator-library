@@ -1,0 +1,28 @@
+{
+  "name": "credit-card-library",
+  "version": "1.0.2",
+  "description": "Card Validator Library",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cardValidator()"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deisetrianon/card-validator-library.git"
+  },
+  "author": "Deise Trianon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deisetrianon/card-validator-library/issues"
+  },
+  "homepage": "https://github.com/deisetrianon/card-validator-library#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.5.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
+  }
+}
